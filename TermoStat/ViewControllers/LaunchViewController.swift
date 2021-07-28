@@ -91,7 +91,7 @@ class LaunchViewController: UIViewController {
     
     private func presentWeatherVC() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            let vc = ViewController()
+            let vc = UINavigationController(rootViewController: MainViewController())
             let transition = CATransition()
             transition.duration = 0.5
             transition.type = CATransitionType.fade
